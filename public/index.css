@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Ranga&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body,
 html {
   background: #cdcdcd;
@@ -43,7 +50,7 @@ html {
   justify-content: space-evenly;
 }
 #section > div.galleryBox {
-  transition: 1s transform;
+  transition: 600ms transform;
   margin-top: 40px;
 
   width: 200px;
@@ -58,6 +65,7 @@ html {
 }
 #section > div.galleryBox:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 #section > div.galleryBox > img {
   width: 192px;
