@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const cors = require("cors");
+const helmet = require("helmet");
 
 const app = express();
 const server = require("http").createServer(app);
@@ -8,6 +9,7 @@ const port = 5000;
 
 app.use(express.json());
 app.use(cors());
+app.use(helmet());
 
 server.listen(port, () => {
   console.log(`My Interactive Forms Server is Running on ${port}`);
