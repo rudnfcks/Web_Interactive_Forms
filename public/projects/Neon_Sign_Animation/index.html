@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Neon Sign Animation</title>
+</head>
+<body>
+  <div class="neon">
+    <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+    y="0px" viewBox="-50 -70 600 600" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+
+      <filter id="neon-shadow">
+        <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="rgba(0,10,255,0.2)" flood-opacity="1"/>
+        <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="rgba(0,10,255,0.5)" flood-opacity="1"/>
+        <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="rgba(0,10,255,0.8)" flood-opacity="1"/>
+        <feDropShadow dx="0" dy="0" stdDeviation="40" flood-color="rgba(0,10,255,1)" flood-opacity="1"/>
+      </filter>
+
+      <g filter="url(#neon-shadow)">
+        <path class="st0" d="M18.8,170.4c0,0-10.8,35.6,24.4,25.1s46.4-53.7,74.6-81.9s31.8-20.3,31.8-20.3s6.4,4.8-15.6,34.9
+         s-17.7,60.5-17.7,60.5s1.5,7.4,7.6,3c6-4.3,33.7-63.8,55.9-81s33.3-21.9,43.2-22.2c9.8-0.3,14.6,15.2,0,15.6
+         c-14.6,0.3-20.3-8.9-27.3-17.5"/>
+        <path class="st0" d="M157.4,150.5c0,0,25.2,15.5,45.1,6.1c19.9-9.4,7.7-21.9,7.7-21.9s-12.5-10.1-34.9,6s-24.3,28.5-23.9,36.8
+         c0.4,8.3,8.6,23.6,54.5,3.5c25.5-11.2,19.4-17.3,34.8-31.6s25.6-19.9,43.5-16c17.9,3.9,6.7,26.6-10.8,40.5s-44.8,32.9-46.3-4.6"/>
+        <path class="st0" d="M290.8,139.1c-8.1,0.1-13.3,3.2-13.2,19.9c0.1,16.7,23,16.3,23,16.3s21.3,2.9,33.2-37.5"/>
+        <path class="st0" d="M302.7,190.2c0,0,42.4-53.3,67.8-54c25.4-0.6,10.8,19.4,10.8,19.4s-21.6,27.9-13.2,33.7
+         c8.4,5.7,32.5-11.1,44.1-23"/>
+        <path class="st0" d="M46.8,341.9c0,0,25.2,5.7,43.2-15.9c18-21.6,9.6-39.9-2.7-39.6s-24.6,7.5-22.2,33.3
+         c2.4,25.8,35.1,31.2,48.3,30.6c13.2-0.6,54-9.5,55.8-58.9s4.2-73.7,21.3-86.9c17.1-13.2,34.5,0.9,26.1,20.4s-40.8,29.4-66.3,15.9"/>
+        <path class="st0" d="M237.4,267.2c0,0-24,29.4-31.2,41.4c-7.2,12-18,38.4,17.7,26.4s63.9-60.3,94.8-65.4s47.4,5.1,20.7,35.4
+         c-26.7,30.3-78.3,54.9-75.9,6.3"/>
+        <path class="st0" d="M364.9,289.7c0,0-37.3,24.3-64.5,64.2c-27.6,40.5-43.2,51.6-56.1,62.4c-12.9,10.8-23.7-3.9-15-15.6
+         c8.7-11.7,59.4-54.9,106.2-70.5s49.5-60.6,49.5-60.6"/>
+        <path class="st0" d="M346.6,337.4c0,0,49.5-76.9,94.5-67.8c17.7,3.6,14.1,17.1-9.9,44.4c-12.9,14.7-6,48.3,53.1-5.4"/>
+        <circle class="st0" cx="249.7" cy="248.3" r="5.7"/>
+      </g>  
+    </svg>
+  </div>
+  <div class="shadow"></div>
+
+</body>
+</html>

@@ -20,6 +20,10 @@ app.use(
   "/3D_Box_Animation/",
   express.static(path.join(__dirname, "public/projects/3D_Box_Animation"))
 );
+app.use(
+  "/Neon_Sign_Animation/",
+  express.static(path.join(__dirname, "public/projects/Neon_Sign_Animation"))
+);
 
 // Index(Main) Page Route
 app.get("/", (req, res) => {
@@ -30,5 +34,10 @@ app.get("/", (req, res) => {
 app.get("/3D_Box_Animation/", (req, res) => {
   res.sendFile(
     path.join(__dirname, "public/projects/3D_Box_Animation/index.html")
+  );
+});
+app.get("/Neon_Sign_Animation/", (req, res) => {
+  res.sendFile(
+    path.join(__dirname, "public/projects/Neon_Sign_Animation/index.html")
   );
 });
