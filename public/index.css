@@ -81,8 +81,26 @@ html {
   text-align: center;
   line-height: 40px;
 }
+#section > div.galleryBox > h4 {
+  float: left;
+
+  margin-top: 16px;
+  width: 91px;
+  height: 18px;
+
+  box-sizing: border-box;
+  padding-left: 4px;
+
+  font-family: "Ranga", cursive;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: left;
+  line-height: 18px;
+}
 #section > div.galleryBox > h3 {
-  width: 192px;
+  float: right;
+
+  width: 91px;
   height: 34px;
 
   box-sizing: border-box;
