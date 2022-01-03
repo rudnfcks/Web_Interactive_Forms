@@ -30,6 +30,10 @@ app.use(
   "/3D_RollText_Animation/",
   express.static(path.join(__dirname, "public/projects/3D_RollText_Animation"))
 );
+app.use(
+  "/Select_Menu_0/",
+  express.static(path.join(__dirname, "public/projects/Select_Menu_0"))
+);
 
 // Index(Main) Page Route
 app.get("/", (req, res) => {
@@ -55,5 +59,10 @@ app.get("/3D_Stairs_Animation/", (req, res) => {
 app.get("/3D_RollText_Animation/", (req, res) => {
   res.sendFile(
     path.join(__dirname, "public/projects/3D_RollText_Animation/index.html")
+  );
+});
+app.get("/Select_Menu_0/", (req, res) => {
+  res.sendFile(
+    path.join(__dirname, "public/projects/Select_Menu_0/index.html")
   );
 });
